@@ -21,7 +21,10 @@ app.get('/api/healthz', (req, res) => {
   // For in-memory, we assume OK; if using DB, check connection here.
   res.status(200).json({ ok: true });
 });
-
+app.get('/', (req, res) => {
+  // For in-memory, we assume OK; if using DB, check connection here.
+  res.status(200).json({ Greeting: "It is working..." });
+});
 // Create a paste
 app.post('/api/pastes', (req, res) => {
   const { content, ttl_seconds, max_views } = req.body || {};

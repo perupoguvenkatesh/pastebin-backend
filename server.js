@@ -4,7 +4,7 @@ import { v4 as uuidv4 } from 'uuid';
 
 const app = express();
 const PORT = process.env.PORT || 4000;
-const APP_BASE_URL ='https://pastebin-frontend-alpha.vercel.app/'; // for returned shareable URL
+const APP_BASE_URL ='https://pastebin-frontend-alpha.vercel.app'; // for returned shareable URL
 
 app.use(cors());
 app.use(express.json({ limit: '1mb' }));

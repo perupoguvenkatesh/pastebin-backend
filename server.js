@@ -23,7 +23,7 @@ app.get('/api/healthz', (req, res) => {
 });
 app.get('/', (req, res) => {
   // For in-memory, we assume OK; if using DB, check connection here.
-  res.status(200).json({ Greeting: "It is working..." });
+  res.status(200).json({ PastebinBackend: "It is working..." });
 });
 // Create a paste
 app.post('/api/pastes', (req, res) => {

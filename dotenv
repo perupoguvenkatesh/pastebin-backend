@@ -1,1 +1,2 @@
 PORT=4000
+APP_BASE_URL=https://pastebin-frontend-alpha.vercel.app/

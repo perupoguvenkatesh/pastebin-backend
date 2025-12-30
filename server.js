@@ -19,7 +19,7 @@ app.get('/venkatesh', (req, res) => {
 });
 app.get('/api/healthz', (req, res) => {
   // For in-memory, we assume OK; if using DB, check connection here.
-  res.status(200).json({ ok: false });
+  res.status(200).json({ ok: true});
 });
 app.get('/', (req, res) => {
   // For in-memory, we assume OK; if using DB, check connection here.

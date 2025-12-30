@@ -13,6 +13,10 @@ app.use(express.json({ limit: '1mb' }));
 const pastes = new Map();
 
 // Health check
+app.get('/venkatesh', (req, res) => {
+  // For in-memory, we assume OK; if using DB, check connection here.
+  res.status(200).json({ name: "venkatesh" });
+});
 app.get('/api/healthz', (req, res) => {
   // For in-memory, we assume OK; if using DB, check connection here.
   res.status(200).json({ ok: true });
